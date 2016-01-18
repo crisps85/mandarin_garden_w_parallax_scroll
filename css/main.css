@@ -27,7 +27,7 @@ p {
 
 .slide {
   position: relative;
-  min-height: 100vh;
+  min-height: 130vh;
   width: 100vw;
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
@@ -66,7 +66,53 @@ p {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) ;
 }
 
+.discover3 {
+  position: absolute;
+  top: 150%;
+  right: -70.5%;
+  width: 100%;
+/*  height: 400px;*/
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) ;
+  padding: 10px;
+  background: rgba(255,255,255,0);
+/*  box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
+}
 
+.discover3:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) ;
+}
+
+.discover4 {
+  position: absolute;
+  top: 55%;
+  right: 3%;
+  width: 350px;
+/*  height: 400px;*/
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) ;
+  padding: 10px;
+  background: rgba(255,255,255,1);
+/*  box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
+}
+
+.discover4:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) ;
+}
+
+.discover5 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+/*  width: 350px !important;*/
+/*  height: 400px;*/
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) ;
+  padding: 10px;
+  background: rgba(255,255,255,1);
+/*  box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
+}
+
+.discover5:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) ;
+}
 .slide:before {
   content: "";
   position: absolute;
@@ -122,13 +168,15 @@ p {
 }
 
 #slide3:before {
-  background-image: url("http://lorempixel.com/640/480/abstract/5/");
+  background-image: url("../img/slide3_background.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
 #slide4 {
   background: #222;
+  transform: translateZ(-1px) scale(2);
+  z-index:-2;
 }
 .row{
     max-width: 100% !important;
@@ -272,6 +320,9 @@ p {
 .fifth div{
     padding-right: 0 !important;
 }
+.fifth img{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
 
 .discover{
     padding: 1rem 2rem;
@@ -301,16 +352,92 @@ p {
 .discover p{
     font-size: 0.8rem;
 }
-.discover2 h1{
+.discover2{
+  padding: 0;
+}
+
+.discover2 h1, .discover3 h1{
     font-family: 'Kristi', cursive;
     display: block;
     color: rgba(0,0,0,1);
     text-align: center;
 }
-.discover2 h1 span{
+.discover2 h1 span, .discover3 h1 span{
     text-transform: uppercase;
     font-size: 4rem;
     font-family:'Raleway', sans-serif;
     font-weight: 300;
     color: rgba(255,255,255,1);
+}
+
+.discover2 li{
+  padding: 0 !important;
+}
+.discover2 img{
+  overflow: hidden;
+  min-height: 300px;
+  min-width: 300px;
+}
+.food_description{
+  padding: 1rem 0rem 1rem 0.8rem;
+  background-image: url("../img/section-dark.png");
+  max-height: 5rem;
+}
+.food_description h2{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.food_description p{
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+#slide3 h1{
+  color: rgba(172,132,86,1);
+  font-size: 5rem;
+}
+#slide3 .container{
+  border: 1px solid red;
+
+}
+.sixth{
+  background-image: url("../img/section-dark.png");
+  padding: 6rem 4rem 4rem 4rem;
+}
+.test{
+  overflow: hidden;
+}
+.discover3{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.discover4, .discover5{
+  padding: 2.0rem 2rem 0rem 2.5rem;
+}
+
+.discover4 h2, .discover5 h2{
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+  padding: 0 0 1rem 0;
+}
+
+.discover4 h3, .discover5 h3{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+.discover4 p, .discover5 p{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.sixth img{
+  padding-bottom: 8rem;
 }
