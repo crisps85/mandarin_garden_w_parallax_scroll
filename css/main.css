@@ -68,7 +68,7 @@ p {
 
 .discover3 {
   position: absolute;
-  top: 150%;
+  top: 200%;
   right: -70.5%;
   width: 100%;
 /*  height: 400px;*/
@@ -84,14 +84,15 @@ p {
 
 .discover4 {
   position: absolute;
-  top: 55%;
-  right: 3%;
+  top: 47%;
+  right: 7%;
   width: 350px;
 /*  height: 400px;*/
   transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) ;
   padding: 10px;
   background: rgba(255,255,255,1);
 /*  box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
+
 }
 
 .discover4:last-of-type {
@@ -100,7 +101,7 @@ p {
 
 .discover5 {
   position: absolute;
-  top: 20%;
+  top: -5%;
   left: 40%;
 /*  width: 350px !important;*/
 /*  height: 400px;*/
@@ -111,6 +112,23 @@ p {
 }
 
 .discover5:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) ;
+}
+
+.discover6 {
+  position: absolute;
+  top: 3590px;
+  left: 65%;
+/*  width: 350px !important;*/
+/*  height: 400px;*/
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) ;
+  padding: 10px;
+  background-color: rgba(255,255,255,1);
+  z-index: 8000;
+/*  box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
+}
+
+.discover6:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) ;
 }
 .slide:before {
@@ -173,11 +191,12 @@ p {
   z-index:-1;
 }
 
-#slide4 {
+/*#slide4 {
   background: #222;
   transform: translateZ(-1px) scale(2);
   z-index:-2;
-}
+}*/
+
 .row{
     max-width: 100% !important;
     font-family: 'Raleway', sans-serif;
@@ -236,8 +255,8 @@ p {
     padding-top: 1%;
     padding-bottom: 1%;
 }
-.second span{
-    font-weight: 700;
+.second span, .seventh span{
+    font-weight: 800;
 }
 
 .nav2{
@@ -414,30 +433,67 @@ p {
   margin: 0;
   padding: 0;
 }
-.discover4, .discover5{
+.discover4, .discover5, .discover6{
   padding: 2.0rem 2rem 0rem 2.5rem;
 }
 
-.discover4 h2, .discover5 h2{
+.discover4 h2, .discover5 h2, .discover6 h2{
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 300;
   text-decoration: underline;
   letter-spacing: 0.1rem;
   padding: 0 0 1rem 0;
+  color: black;
 }
 
-.discover4 h3, .discover5 h3{
+.discover4 h3, .discover5 h3, .discover6 h3{
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 180%;
 }
 
-.discover4 p, .discover5 p{
+.discover4 p, .discover5 p, .discover6 p{
   font-size: 0.8rem;
   font-weight: 300;
 }
 .sixth img{
-  padding-bottom: 8rem;
+  padding-top: 8rem;
+  padding-left: 4rem;
+  padding-right: 3rem;
+}
+
+.discover6{
+  min-height: 450px;
+}
+.discover6 h2{
+  font-family: "Raleway", sans-serif;
+}
+
+.sixth {
+  min-height: 2500px;
+  padding: 0;
+
+}
+.foot{
+  background-color: rgba(40,40,40,1);
+  color: rgba(255,255,255,1);
+  margin-top: 10rem;
+}
+
+.seventh div{
+  padding: 3rem 0rem 3rem 3rem;
+  font-weight: 100;
+}
+
+.seventh h3{
+  font-size: 1.2rem;
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.seventh img{
+  width: 50px;
 }
