@@ -68,7 +68,7 @@ p {
 
 .discover3 {
   position: absolute;
-  top: 200%;
+  top: 215%;
   right: -70.5%;
   width: 100%;
 /*  height: 400px;*/
@@ -84,7 +84,7 @@ p {
 
 .discover4 {
   position: absolute;
-  top: 47%;
+  top: 45%;
   right: 7%;
   width: 350px;
 /*  height: 400px;*/
@@ -117,7 +117,7 @@ p {
 
 .discover6 {
   position: absolute;
-  top: 3590px;
+  top: 3700px;
   left: 65%;
 /*  width: 350px !important;*/
 /*  height: 400px;*/
@@ -337,32 +337,32 @@ p {
     padding: 0 0 5rem 5rem;
 }
 .fifth div{
-    padding-right: 0 !important;
+    padding-right: 0;
 }
 .fifth img{
     box-shadow: 0 0 10px rgba(0, 0, 0, .7);
 }
 
-.discover{
-    padding: 1rem 2rem;
+.discover, .discover6{
+    padding: 2rem 2.5rem !important;
     width: 30%;
 }
 
-.discover h1{
+.discover h1, .discover6 h1{
     font-family: 'Kristi',cursive;
     font-size: 4rem;
     color: rgba(172,132,81,1);
     line-height: 0.8;
     letter-spacing: 0.1rem;
 }
-.discover h2{
+.discover h2, .discover6 h2{
     text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 0.8;
     font-weight: 300;
     letter-spacing: 0.1rem;
 }
-.discover h3{
+.discover h3, .discover6 h3{
     text-transform: uppercase;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
@@ -433,8 +433,15 @@ p {
   margin: 0;
   padding: 0;
 }
-.discover4, .discover5, .discover6{
+.discover4, .discover5{
   padding: 2.0rem 2rem 0rem 2.5rem;
+}
+
+.discover6{
+  text-align: left;
+}
+.discover6 h2{
+  text-decoration: none !important;
 }
 
 .discover4 h2, .discover5 h2, .discover6 h2{
@@ -447,14 +454,14 @@ p {
   color: black;
 }
 
-.discover4 h3, .discover5 h3, .discover6 h3{
+.discover4 h3, .discover5 h3{
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 180%;
 }
 
-.discover4 p, .discover5 p, .discover6 p{
+.discover4 p, .discover5 p{
   font-size: 0.8rem;
   font-weight: 300;
 }
@@ -493,7 +500,240 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
-
-.seventh img{
-  width: 50px;
+.seventh p{
+  color: rgba(255,255,255,1);
 }
+
+.seventh li{
+  display: inline;
+}
+.seventh img,
+.seventh img:before,
+.seventh img:after{
+  -webkit-box-sizing: none;
+  -moz-box-sizing: none;
+  box-sizing: none; 
+
+}
+
+.seventh a img,
+.seventh a img:before,
+.seventh a img:after{
+  -webkit-box-sizing: none;
+  -moz-box-sizing: none;
+  box-sizing: none; 
+  padding: 0;
+  width: 30px;
+}
+.pad h3{
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.flicker img{
+  width: 25% !important;
+
+
+}
+.flicker li{
+  margin-right: 1rem;
+
+}
+
+.th{
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  max-width: none;
+}
+
+.smaller-icons a img{
+  width: 1rem;
+  margin-right: 1rem;
+}
+
+.seventh p{
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(173,173,173,1);
+}
+
+.smaller-icons a{
+  color: rgba(173,173,173,1);
+  font-size: 0.8rem;
+}
+.seventh h3{
+  font-size: 0.8rem;
+}
+.seventh h3 span{
+  font-size: 1.3rem;
+}
+
+.seventh h4 a{
+  font-size: 0.9rem;
+  color: rgba(255,255,255,1);
+}
+
+.seventh a:hover{
+  color: rgba(172,132,86,1);
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires. Ipad
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .discover{
+    top:65%;
+    right:-28%;
+    width: 70%
+  }
+  .slide {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: none;
+    transform-style: inherit;
+  }
+  .discover2{
+    top:25%;
+  }
+  .discover3{
+    top: 225%;
+  }
+  .discover4{
+    top: 75%;
+    right: -42.67%;
+    width: 81.9%;
+  }
+  .discover5{
+    margin-top: 5%;
+    width: 81.9%;
+    left: 60.8%;
+  }
+  .discover6{
+    top:4640px;
+    left: 54.5%;
+    width: 90%;
+  }
+  .sixth img{
+    padding-top: 4rem;
+  }
+
+  .test{
+    margin-bottom: 90%;
+  }
+    /* Style adjustments for viewports that meet the condition */
+}
+.sixth div:nth-of-type(3){
+  padding-bottom: 20rem;
+}
+
+}
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media only screen and (max-width: 640px) { 
+  .third{
+    padding-left: 2rem;
+  }
+  .third h1{
+    font-size: 1.9rem;
+  }
+  .fifth{
+    padding: 0;
+  }
+  .fifth .small-12{
+    padding: 0 1rem 2rem 1rem;
+  }
+  #slide1{
+    min-height: 250vh;
+  }
+  .discover{
+    top:65%;
+    right: -51%;
+    width: 90%;
+  }
+  .discover h1, .discover6 h1{
+    font-size: 2rem;
+  }
+  .discover h2, .discover6 h2{
+    font-size: 1.8rem;
+  }
+  #slide2{
+    min-height: 200vh;
+  }
+  .discover3{
+    top: 420%;
+  }
+  .food_description p{
+    display: none;
+  }
+  .food_description h2{
+    font-size: 0.8rem;
+  }
+  
+  .sixth img{
+    padding: 3rem 0.5rem 0 0.5rem;
+  }
+
+  .discover2{
+    top:20%;
+  }
+  .discover2 h1 span, .discover3 h1 span{
+    font-size: 3rem;
+  }
+
+  .discover4{
+    top:120%;
+    right: -46.7%;
+    width: 86%;
+    padding: 1rem;
+  }
+  .discover4 p{
+    display: none;
+  }
+  .discover4 h2, .discover5 h2, .discover6 h2{
+    font-size: 1rem;
+    padding: 0 0 0.5rem 0;
+    line-height: 1rem;
+  }
+   .discover4 h3, .discover5 h3{
+    font-size: 0.7rem;
+    line-height: 120%;
+    font-weight: 300;
+  }
+  .discover5{
+    margin-top: 65%;
+  }
+  .small-10{
+    width: 86% !important;
+    margin-top: 70%;
+  }
+  .discover5 p{
+    display: none;
+  }
+  .discover6{
+    top:3770px;
+        width: 96%!important;
+  }
+  .discover6 p{
+    font-size: 0.7rem;
+  }
+  .small-11{
+
+    left: 56.5%;
+  }
+  .pad{
+    padding: 0rem !important;
+  }
+}
+
+/* ==========================================================================
